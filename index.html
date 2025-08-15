@@ -100,7 +100,6 @@
           <p style="margin-top:16px"><a class="cta" href="#join">Express Interest</a></p>
         </div>
         <div class="card img-frame" aria-label="Family photo placeholder">
-          <!-- Replace the src below with your actual photo file name once added to the repo -->
           <img src="robotics.png" alt="Club Image" />
         </div>
       </div>
@@ -237,7 +236,6 @@
           <h2>Join Us / Express Interest</h2>
           <p>If your child (or you!) is curious, complete our interest form or send us a message. We’ll follow up with schedule options and next steps.</p>
           <p><a class="cta" href="#" id="interestLink">Open Interest Form</a></p>
-          <p class="muted">Once you have a Google Form link, set it below in the code (see comment) or swap this button for a direct link.</p>
         </div>
         <div class="card">
           <h2>Contact</h2>
@@ -268,14 +266,12 @@
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Interest form link (EDIT THIS VALUE)
-    // TODO: Paste your Google Form link below.
-    // Example: const INTEREST_FORM_URL = "https://forms.gle/your-form-id";
-    const INTEREST_FORM_URL = "https://forms.gle/2d5WjAaFYAuSu3rN8"; // ← replace with your form URL
+    // Interest form link
+    const INTEREST_FORM_URL = "https://forms.gle/2d5WjAaFYAuSu3rN8";
     document.getElementById('interestLink').addEventListener('click', (e) => {
       if (!INTEREST_FORM_URL || INTEREST_FORM_URL === '#') {
         e.preventDefault();
-        alert('Add your Google Form link in the code (INTEREST_FORM_URL).');
+        alert('Add Google Form link in the code (INTEREST_FORM_URL).');
       } else {
         e.preventDefault();
         window.open(INTEREST_FORM_URL, '_blank');
