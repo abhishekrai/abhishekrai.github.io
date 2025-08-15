@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Palo Alto VEX IQ (Recreational, Student‑Led)</title>
+  <meta name="description" content="Student‑led VEX IQ robotics team for 5th graders in Palo Alto, CA — fun, inclusive, and focused on STEM, teamwork, and creativity." />
+  <meta property="og:title" content="Palo Alto VEX IQ (Recreational, Student‑Led)" />
+  <meta property="og:description" content="Student‑led VEX IQ robotics team for 5th graders in Palo Alto, CA — fun, inclusive, and focused on STEM, teamwork, and creativity." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="family-placeholder.jpg" />
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b1020;          /* deep navy */
+      --card: #11172b;        /* slightly lighter */
+      --text: #e6edf6;        /* off‑white */
+      --muted: #b7c0d6;       /* muted text */
+      --primary: #22d3ee;     /* cyan */
+      --accent: #a78bfa;      /* purple */
+      --pill: #0ea5e9;        /* sky */
+      --ring: #22d3ee33;      /* subtle */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header {
+      position: sticky; top: 0; z-index: 50; backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, #0b1020cc 0%, #0b102000 100%);
+      border-bottom: 1px solid #1e263f;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 16px 20px; }
+    .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:0.2px; }
+    .brand .dot { width:10px; height:10px; border-radius:999px; background:linear-gradient(135deg, var(--primary), var(--accent)); box-shadow:0 0 12px var(--ring); }
+    nav { display:flex; gap:18px; flex-wrap:wrap; }
+    .nav-row { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .cta { display:inline-block; padding:10px 16px; border-radius:999px; background: linear-gradient(135deg, var(--primary), var(--accent)); color:#06121f; font-weight:800; box-shadow:0 6px 24px #0007; }
+    .cta:hover { transform: translateY(-1px); text-decoration:none; }
+
+    .hero { padding: 56px 20px 20px; }
+    .grid { display:grid; gap:24px; grid-template-columns: 1.1fr 0.9fr; }
+    @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+    .card { background: linear-gradient(180deg, #131a31, #0f162b); border:1px solid #1f2a49; border-radius: 20px; padding: 20px; box-shadow: 0 10px 30px #0008; }
+    h1 { font-family: Nunito, Inter, system-ui; font-weight: 900; font-size: clamp(28px, 5vw, 48px); line-height:1.1; margin: 0 0 12px; }
+    h2 { font-size: clamp(22px, 3.5vw, 28px); margin: 24px 0 10px; }
+    h3 { font-size: 20px; margin: 20px 0 8px; }
+    p.lead { font-size: clamp(16px, 2.2vw, 18px); color: var(--muted); }
+    ul { margin: 10px 0 0 18px; }
+    li { margin: 6px 0; }
+    .tag { display:inline-flex; align-items:center; gap:8px; background:#0f2741; color:#a7d0ff; border:1px solid #1d4166; border-radius:999px; padding:6px 10px; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:0.6px; }
+    .pill-row { display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; }
+    .img-frame { border-radius: 16px; overflow: hidden; border:1px solid #21335a; background:#0d152b; }
+    .img-frame img { width: 100%; height: auto; display:block; aspect-ratio: 16/10; object-fit: cover; }
+    .section { padding: 10px 20px; }
+    .section .wrap { padding: 36px 20px; }
+    .two-col { display:grid; gap:20px; grid-template-columns: 1fr 1fr; }
+    @media (max-width: 900px){ .two-col { grid-template-columns: 1fr; } }
+    .foot { color:#9db0d8; border-top:1px solid #1e2b4f; padding: 18px 0 28px; font-size:14px; }
+    .muted { color: var(--muted); }
+    .faq details { background:#0e1630; border:1px solid #21335a; border-radius:14px; padding:14px 16px; margin:12px 0; }
+    .faq summary { cursor:pointer; font-weight:600; }
+    .notice { background: #0a1c2f; border:1px dashed #1f9bd1; padding:12px 14px; border-radius:12px; color:#bde6ff; }
+    .kicker { font-size:12px; letter-spacing:1px; color:#9bd8ff; text-transform:uppercase; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav-row">
+      <div class="brand"><span class="dot"></span><span>Palo Alto VEX IQ</span></div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#why">Why VEX IQ</a>
+        <a href="#commitment">Commitment</a>
+        <a href="#learn">Learning</a>
+        <a href="#safety">Safety</a>
+        <a href="#coach">Coach</a>
+        <a href="#faq">FAQ</a>
+        <a class="cta" href="#join">Join Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap grid">
+        <div class="card">
+          <span class="kicker">Recreational • Student‑Led • Inclusive</span>
+          <h1>Palo Alto VEX IQ<br/>for 5th Graders</h1>
+          <p class="lead">Hands‑on robotics in Palo Alto, guided by a certified coach. Kids lead the design, building, and coding. No experience needed—curiosity welcome.</p>
+          <div class="pill-row">
+            <span class="tag">Teamwork</span>
+            <span class="tag">Coding</span>
+            <span class="tag">Creativity</span>
+            <span class="tag">Problem‑Solving</span>
+          </div>
+          <p style="margin-top:16px"><a class="cta" href="#join">Express Interest</a></p>
+        </div>
+        <div class="card img-frame" aria-label="Family photo placeholder">
+          <!-- Replace the src below with your actual photo file name once added to the repo -->
+          <img src="family-placeholder.jpg" alt="Your family — coach and supporters" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>What are VEX & RECF?</h2>
+          <p><a href="https://www.vexrobotics.com/vexiq" target="_blank" rel="noopener">VEX IQ</a> is a hands‑on robotics program where kids design, build, and program robots using snap‑together parts. It’s run under the <a href="https://recf.org/" target="_blank" rel="noopener">Robotics Education &amp; Competition Foundation (RECF)</a>, which emphasizes <strong>student leadership, teamwork, communication, programming, and real‑world problem solving</strong>. Adults guide safety and structure—<strong>students do the work</strong>.</p>
+        </div>
+        <div class="card">
+          <h2>What This Team Is (and Isn’t)</h2>
+          <ul>
+            <li><strong>Recreational first:</strong> Fun, tinkering, learning. We may explore competitions this year or next depending on student interest and readiness.</li>
+            <li><strong>Student‑owned:</strong> Kids plan, build, and iterate; adults keep them safe, on‑task, and positive.</li>
+            <li><strong>Inclusive:</strong> No prior experience required. Curiosity beats credentials.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>Why VEX IQ for 5th Graders?</h2>
+          <ul>
+            <li><strong>Student‑led teamwork:</strong> Plan, divide roles (builder, programmer, driver, documenter), and practice feedback.</li>
+            <li><strong>Programming growth:</strong> Start with block‑based coding; progress to Python as confidence grows.</li>
+            <li><strong>Creative engineering:</strong> Design–build–test cycles teach persistence and systems thinking.</li>
+            <li><strong>Future‑proof pathway:</strong> Smooth progression to VEX V5 (middle/high school) if students want more challenge later.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Calendar & Location</h2>
+          <ul>
+            <li><strong>Location:</strong> Palo Alto (near Fairmeadow Elementary; final room TBD).</li>
+            <li><strong>Schedule:</strong> Targeting one weekday after school; confirmed once the group forms.</li>
+            <li><strong>Season flow:</strong> Intro &amp; safety → Build basic bots → Sensors &amp; autonomy → Mini‑challenges → Optional competition exploration.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="commitment" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>Time & Commitment (Parents + Students)</h2>
+          <ul>
+            <li><strong>Start:</strong> 1 hour/week to begin (after school or early evening).</li>
+            <li><strong>Ramp:</strong> Likely 2 hours/week later if students want deeper projects or scrimmages.</li>
+            <li><strong>At home (optional):</strong> Short design journals, a 5–10 minute skills video, or light coding practice.</li>
+          </ul>
+          <div class="notice">
+            <strong>Volunteering:</strong> Parents interested in helping—logistics, outreach, mentoring—please reach out. Anyone assisting with coaching will need to complete the <a href="https://recf.org/get-certified" target="_blank" rel="noopener"><strong>RECF Coach Certification</strong></a>.
+          </div>
+        </div>
+        <div class="card">
+          <h2>What You’ll Need</h2>
+          <ul>
+            <li><strong>Team hardware:</strong> We’ll start with shared VEX IQ kits and basic tools.</li>
+            <li><strong>Optional:</strong> A notebook (or digital doc) for design notes; labeled water bottle.</li>
+            <li><strong>No laptops required at first:</strong> We’ll provide a coding setup; device specs shared later if needed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>What We’ll Learn</h2>
+          <ul>
+            <li><strong>Mechanical basics:</strong> Gears, levers, drivetrains, simple mechanisms.</li>
+            <li><strong>Control &amp; sensors:</strong> Line tracking, distance sensing, simple autonomy.</li>
+            <li><strong>Programming:</strong> VEXcode Blocks → intro to Python for interested students.</li>
+            <li><strong>Team skills:</strong> Stand‑ups, design notebooks, giving updates, and celebrating “good fails.”</li>
+          </ul>
+        </div>
+        <div class="card" id="safety">
+          <h2>Safety & Culture</h2>
+          <ul>
+            <li><strong>Safety first:</strong> Eye protection during testing; no rushing around active robots.</li>
+            <li><strong>Respect &amp; inclusion:</strong> Every voice matters; we rotate roles to grow confidence.</li>
+            <li><strong>Growth mindset:</strong> Test → learn → iterate. We celebrate prototypes and progress.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="coach" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>About the Coach</h2>
+          <p>I’m <strong>a certified VEX/RECF coach</strong>, an ex‑Googler and <strong>2× founder</strong>, and a parent of a 5th grader at <strong>Fairmeadow Elementary</strong> (plus a very curious 3‑year‑old). I love building things with <strong>Raspberry Pi and Arduino</strong> in my spare time. My spouse and I are long‑time Palo Alto residents and <strong>Project Cornerstone</strong> classroom readers for the past four years. I’m here to provide structure and safety—<strong>the kids lead the robotics</strong>.</p>
+        </div>
+        <div class="card">
+          <h2>Costs</h2>
+          <p>We’ll keep costs minimal and transparent (shared kits, optional event fees only if we scrimmage/compete). We’ll discuss a simple, per‑family share once interest is confirmed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="wrap">
+        <div class="card faq">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Is this only for kids who want to compete?</summary>
+            <p>No. It’s recreational. We’ll learn first; if students are excited, we may try a scrimmage or competition later.</p>
+          </details>
+          <details>
+            <summary>Do we need experience?</summary>
+            <p>No. Total beginners welcome.</p>
+          </details>
+          <details>
+            <summary>How big is the team?</summary>
+            <p>We’re aiming for ~6 students to keep it hands‑on and student‑led.</p>
+          </details>
+          <details>
+            <summary>Can parents observe or help?</summary>
+            <p>Absolutely. Quick help with setup/cleanup is appreciated. Interested in coaching support? Please reach out—coaching helpers complete the <a href="https://recf.org/get-certified" target="_blank" rel="noopener">RECF Coach Certification</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="section">
+      <div class="wrap two-col">
+        <div class="card">
+          <h2>Join Us / Express Interest</h2>
+          <p>If your child (or you!) is curious, complete our interest form or send us a message. We’ll follow up with schedule options and next steps.</p>
+          <p><a class="cta" href="#" id="interestLink">Open Interest Form</a></p>
+          <p class="muted">Once you have a Google Form link, set it below in the code (see comment) or swap this button for a direct link.</p>
+        </div>
+        <div class="card">
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br />Phone: <a href="tel:+1-650-000-0000">+1 (650) 000‑0000</a></p>
+          <p class="muted">Replace contact details with your preferred info.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year"></span> Palo Alto VEX IQ • Built with ❤️ for the community</div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Interest form link (EDIT THIS VALUE)
+    // TODO: Paste your Google Form link below.
+    // Example: const INTEREST_FORM_URL = "https://forms.gle/your-form-id";
+    const INTEREST_FORM_URL = "#"; // ← replace with your form URL
+    document.getElementById('interestLink').addEventListener('click', (e) => {
+      if (!INTEREST_FORM_URL || INTEREST_FORM_URL === '#') {
+        e.preventDefault();
+        alert('Add your Google Form link in the code (INTEREST_FORM_URL).');
+      } else {
+        e.preventDefault();
+        window.open(INTEREST_FORM_URL, '_blank');
+      }
+    });
+  </script>
+</body>
+</html>
